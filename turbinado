@@ -1,0 +1,24 @@
+#!/bin/bash
+
+sudo port insall ghc
+curl -O http://darcs.net/darcs-2.2.0.tar.gz
+gzip -d darcs-2.2.0.tar.gz
+tar -xvf darcs-2.2.0.tar
+#cd darcs-2.2.0
+./configure
+make
+make install
+#cd ..
+rm darcs-2.2.0.tar
+mkdir -p ~/dev/haskell
+cd ~/dev/haskell
+darcs get --lazy http://code.haskell.org/HSP/haskell-src-exts/
+darcs get --lazy http://code.haskell.org/HSP/harp/
+git clone git://git.complete.org/hslogger
+darcs get --lazy http://code.haskell.org/encoding/
+darcs get --lazy http://code.haskell.org/HSP/hsx/
+#darcs get --lazy http://code.haskell.org/hs-plugins
+darcs get --lazy http://code.haskell.org/http/
+git clone git://git.complete.org/hdbc
+git clone git://git.complete.org/hdbc-postgresql
+
