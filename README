@@ -1,0 +1,5 @@
+This is will NOT install turbinado yet - It will go as far as to download all of the necessary resources listed on the turbinado website, but they won't all install natively for me (dependency issues it looks like?). So far it's basically just an attempt to familiarize myself with darcs and cabal (even though I wrote the installer in ruby).
+
+You'll obviously need git and darcs, which should both be installable via macports, and if you're reading this page you probably already have git, so that's irrelevant.  
+
+Feel free to tell me what I'm fucking up, everyone
