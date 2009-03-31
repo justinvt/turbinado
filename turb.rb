@@ -4,7 +4,7 @@ require 'open-uri'
 require 'hpricot'
 
 install_site = "http://www.turbinado.org/Home/Install"
-install_to   = "/Users/justin/dev/haskell"
+install_to   = "~/dev/haskell"
 install_specs = Hpricot(open(install_site)).search("li").collect{|li| {:name=> li.inner_text.strip, :link=> li.search("a")}}.select{|r| r[:name] =~ /\([a-z]+\)$/}
 #raise install_specs.inspect
 

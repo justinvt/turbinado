@@ -1,0 +1,3 @@
+Firstly, you'll need git (we'll assume you already have that) and darcs to run this.  It should be easy to get from the darcs homepage or macports.
+
+At this point this wil NOT install turbinado.  It will just pull all of the necessary libs and then not do shit.  I encountered one broken repo and probably half of the cabal installs threw errors, I'm guessing dependency issues, so the rest isyet to come, once I figure out what the fuck I'm doing.  I haven't written a single line of Haskell in my life yet, so I apologize for being an idiot here.
